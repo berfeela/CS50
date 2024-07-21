@@ -1,1 +1,1 @@
-Test code from cs50 lectire 1 in c
+Test code from CS50 lecture 1 in C
