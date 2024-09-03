@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Running sort1 on sorted50000.txt took the least amount of time since.
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge sort has the shortest big O notation i.e. time taken to sort in the worst case. Running sort2 on reversed50000.txt took the least amount of time versus sort1 & sort3
+
+sort3 uses: Selection Sort
+
+How do you know?: Selection Sort has the highest big omega notation i.e. time taken to verify in the best case. Running sort3 on sorted50000.txt took the most amount of time versus sort1 & sort2
