@@ -158,7 +158,7 @@ void lock_pairs(void)
 
 bool has_cycle(int winner, int loser)
 {
-    if (winner == loser)  //detecting the cycle's formation in the recursion
+    if (winner == loser)  //detecting the cycle's formation in the recursion ++ eliminating self-pair edge-case from locked array
     {
         return true;
     }
@@ -167,7 +167,7 @@ bool has_cycle(int winner, int loser)
     {
         if (locked[loser][i] == true)  //calling locked recursively to check whether loser has any edges
         {
-            if (has_cycle(winner, i) == true)  //checking if the edge loser has is connecting back to winner
+            if (has_cycle(winner, i) == true)  //checking if the edge loser has is connecting back to winner OR if it is the winner
             {
                 return true;
             }
